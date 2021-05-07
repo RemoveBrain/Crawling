@@ -1,4 +1,5 @@
-#네이버 메인 페이지 배너 (메일,카페,블로그 ~~ 책,웹툰) 부분 텍스트 크롤링
+
+#네이버 메인 페이지 배너 (메일,카페,블로그 ~~ 책,웹툰) 부분 텍스트 크롤링 
 
 import requests 
 from bs4 import BeautifulSoup
