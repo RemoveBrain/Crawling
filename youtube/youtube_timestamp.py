@@ -21,12 +21,18 @@ driver.find_elements_by_xpath('//*[@id="more"]/yt-formatted-string')[0].click() 
 time.sleep(2)
 # TimeStamp 크롤링=======================
 i = 3
+j = 4
 time_list = []
+des_list = []
 while 1 :
     time_stamp = driver.find_element_by_xpath('//*[@id="description"]/yt-formatted-string/a['+str(i)+']')
+    des = des = driver.find_element_by_xpath('//*[@id="description"]/yt-formatted-string/span['+str(j)+']')
     if time_stamp.text.find(':') == -1 :
         break;
     time_list.append(int(time_stamp.text[0:2])*60 + int(time_stamp.text[3:]))
+    des_list.append(des.text)
     i = i+1
+    j = j+1
 #========================================
 print("timestamp : ",time_list)
+print("description : ",des_list)
