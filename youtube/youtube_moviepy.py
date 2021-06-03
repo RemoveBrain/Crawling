@@ -31,7 +31,7 @@ while True :
 selected_file = f"{folderPath}/{_directory[select]}"
 
 print("영상을 편집합니다. ")
-#원래는 크롤링 해올 부분 ====
+#현재 하드코딩부분//크롤링으로 자료 수집 예정
 t0 = ["이... 이름이","오프닝","AirTag","iMac with M1","iPad Pro 5th","이번 이벤트의 소감은?"]
 t1 = [0,13,44,194,438,698] 
 # ===========================
